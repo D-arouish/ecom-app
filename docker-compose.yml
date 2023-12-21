@@ -1,0 +1,103 @@
+services:
+  iao-ecom-discovery-service:
+    build: ./discovery-service
+#set conteneur name pour ne pas generer un nom par hazard
+    container_name: iao-ecom-discovery-service
+    ports:
+      - '8761:8761'
+    expose:
+      - '8761'
+    healthcheck:
+# dans cmd executer la command curl qui permet d'envoyer des requetes HTTP vers le lien specifier
+# -f pour renvoyer l'etat d'erreur ou cas de l'echec
+      test: ["CMD", "curl", "-f", "http://localhost:8761/actuator/health"]
+      interval: 10s
+
+  iao-ecom-config-service:
+    build: ./config-service
+    container_name: iao-ecom-config-service
+    ports:
+      - '9999:9999'
+    expose:
+      - '9999'
+# a la place de localhost on donne le nomme de service
+    environment:
+      - DISCOVERY_SERVICE_URL=http://iao-ecom-discovery-service:8761/eureka
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:9999/actuator/health"]
+      interval: 10s
+      retries: 4
+    depends_on:
+     iao-ecom-discovery-service:
+       condition: service_healthy
+  iao-ecom-customer-service:
+    build: ./customer-service
+    container_name: iao-ecom-customer-service
+    ports:
+      - '8081:8081'
+    expose:
+      - '8081'
+    environment:
+      - DISCOVERY_SERVICE_URL=http://iao-ecom-discovery-service:8761/eureka
+      - CONFIG_SERVICE_URL=http://iao-ecom-config-service:9999/
+    healthcheck:
+      test: ["CMD","curl", "-f", "http://localhost:8081/actuator/health"]
+      interval: 10s
+      retries: 4
+    depends_on:
+      iao-ecom-discovery-service:
+        condition: service_healthy
+      iao-ecom-config-service:
+        condition: service_healthy
+  iao-ecom-product-service:
+   build: ./product-service
+   container_name: iao-ecom-product-service
+   ports:
+     - '8082:8082'
+   expose:
+     - '8082'
+   environment:
+     - DISCOVERY_SERVICE_URL=http://iao-ecom-discovery-service:8761/eureka
+     - CONFIG_SERVICE_URL=http://iao-ecom-config-service:9999/
+   healthcheck:
+     test: [ "CMD","curl", "-f", "http://localhost:8082/actuator/health" ]
+     interval: 10s
+     retries: 4
+   depends_on:
+     iao-ecom-customer-service:
+       condition: service_healthy
+  iao-ecom-vente-service:
+    build: ./vente-service
+    container_name: iao-ecom-vente-service
+    ports:
+      - '8084:8084'
+    expose:
+      - '8084'
+    environment:
+      - DISCOVERY_SERVICE_URL=http://iao-ecom-discovery-service:8761/eureka
+      - CONFIG_SERVICE_URL=http://iao-ecom-config-service:9999/
+    healthcheck:
+      test: [ "CMD","curl", "-f", "http://localhost:8084/actuator/health" ]
+      interval: 10s
+      retries: 4
+    depends_on:
+      iao-ecom-product-service:
+        condition: service_healthy
+
+  iao-ecom-gateway-service:
+    build: ./gateway-service
+    container_name: iao-ecom-gateway-service
+    ports:
+      - '8888:8888'
+    expose:
+      - '8888'
+    environment:
+      - DISCOVERY_SERVICE_URL=http://iao-ecom-discovery-service:8761/eureka
+      - CONFIG_SERVICE_URL=http://iao-ecom-config-service:9999/
+    healthcheck:
+      test: [ "CMD","curl", "-f", "http://localhost:8888/actuator/health" ]
+      interval: 10s
+      retries: 4
+    depends_on:
+      iao-ecom-config-service:
+        condition: service_healthy

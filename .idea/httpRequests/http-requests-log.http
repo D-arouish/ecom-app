@@ -1,0 +1,108 @@
+POST http://localhost:9999/actuator/refresh
+Accept: application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-15T233957.405.json
+
+###
+
+GET http://localhost:8081/testConfig
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-15T000117.200.json
+
+###
+
+POST http://localhost:8888/CUSTOMER-SERVICE/actuator/refresh
+Accept: application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-15T000043.404.json
+
+###
+
+POST http://localhost:8888/CUSTOMER-SERVICE/actuator/refresh
+Accept: application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-14T235711.200.json
+
+###
+
+POST http://localhost:8888/CUSTOMER-SERVICE/actuator/refresh
+Accept: application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-14T235556.200.json
+
+###
+
+POST http://localhost:8888/CUSTOMER-SERVICE/actuator/refresh
+Accept: application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-14T235527.200.json
+
+###
+
+POST http://localhost:8888/CUSTOMER-SERVICE/actuator/refresh
+Accept: application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-14T235457.200.json
+
+###
+
+POST http://localhost:8888/CUSTOMER-SERVICE/actuator/refresh
+Accept: application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-14T235430.200.json
+
+###
+
+POST http://localhost:8888/CUSTOMER-SERVICE/actuator/refresh
+Accept: application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-14T233743.200.json
+
+###
+
+POST http://localhost:8081/actuator/refresh
+Accept: application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-14T233658.200.json
+
+###
+
