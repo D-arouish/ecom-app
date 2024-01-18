@@ -1,3 +1,87 @@
+POST http://localhost:8080/realms/ecom-app/protocol/openid-connect/token
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+grant_type=password&username=user&password=1234&client_id=iao-ecom-client
+
+<> 2024-01-16T222442.200.json
+
+###
+
+POST http://localhost:8080/realms/ecom-app/protocol/openid-connect/token
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+grant_type=password&username=user&password=1234&client_id=ecom-app-client
+
+<> 2024-01-16T220640.200.json
+
+###
+
+POST http://localhost:8080/realms/ecom-app/protocol/openid-connect/token
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+grant_type=password&username=user&password=1234&client_id=ecom-app-client
+
+<> 2024-01-16T170116.200.json
+
+###
+
+POST http://localhost:8080/realms/ecom-app/protocol/openid-connect/token
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+grant_type=password&username=user&password=1234&client_id=ecom-app-client
+
+<> 2024-01-16T151556.200.json
+
+###
+
+POST http://localhost:8080/realms/ecom-app/protocol/openid-connect/token
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 74
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+grant_type=password&username=user1&password=1234&client_id=ecom-app-client
+
+<> 2024-01-16T151427.401.json
+
+###
+
+POST http://localhost:8080/realms/ecom-app-realm/protocol/openid-connect/token
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 124
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+grant_type=password&username=user&password=1234&client_id=spring-cloud-client&client_secret=flEhGkggf6rLABUVKOPunjKkFfyVPpz1
+
+<> 2024-01-16T023941.200.json
+
+###
+
 POST http://localhost:9999/actuator/refresh
 Accept: application/json
 Content-Length: 0

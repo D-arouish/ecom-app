@@ -16,7 +16,7 @@ public class Vente {
     private Long id;
     private Date VenteDate;
     private Long customerId;
-    @OneToMany(mappedBy = "vente")
+    @OneToMany(mappedBy = "vente", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<ProductItem> productItems;
 
     @Transient

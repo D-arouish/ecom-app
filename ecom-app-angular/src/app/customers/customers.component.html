@@ -1,0 +1,112 @@
+<div class="p-3">
+  <button (click)="toggleAddCustomerForm()" class="btn btn-success ms-1">+Customer</button><br><br>
+
+  <!-- Add new Customer section (conditionally shown) -->
+  <div *ngIf="showAddCustomerForm">
+    <section class="vh-25" style="background-color: rgba(39,121,226,0);">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-xl-9">
+            <div class="card" style="border-radius: 15px;">
+              <h1 class="text-black mb-4 text-center">Add Customer</h1>
+              <div class="card-body">
+                <div class="row align-items-center pt-4 pb-3">
+                  <div class="col-md-3 ps-5">
+                    <h6 class="mb-0">Full name</h6>
+                  </div>
+                  <div class="col-md-9 pe-5">
+                    <input type="text" class="form-control form-control-lg" [(ngModel)]="newCustomerName" />
+                  </div>
+                </div>
+                <hr class="mx-n3">
+                <div class="row align-items-center py-3">
+                  <div class="col-md-3 ps-5">
+                    <h6 class="mb-0">Email address</h6>
+                  </div>
+                  <div class="col-md-9 pe-5">
+                    <input type="email" class="form-control form-control-lg" placeholder="example@example.com" [(ngModel)]="newCustomerEmail" />
+                  </div>
+                </div>
+                <hr class="mx-n3">
+                <div class="px-5 py-4">
+                  <button type="submit" (click)="addCustomer()" class="btn btn-primary btn-lg">Add Customer</button>
+                  <button type="button" (click)="cancelAdd()" class="btn btn-secondary btn-lg ms-2">Cancel</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div *ngIf="showEditedCustomerForm">
+    <section class="vh-25" style="background-color: rgba(39,121,226,0);">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-xl-9">
+            <div class="card" style="border-radius: 15px;">
+              <h1 class="text-black mb-4 text-center">Edit Customer</h1>
+              <div class="card-body">
+                <div class="row align-items-center pt-4 pb-3">
+                  <div class="col-md-3 ps-5">
+                    <h6 class="mb-0">Full name</h6>
+                  </div>
+                  <div class="col-md-9 pe-5">
+                    <input type="text" class="form-control form-control-lg" [(ngModel)]="editedCustomerName"  />
+                  </div>
+                </div>
+                <hr class="mx-n3">
+                <div class="row align-items-center py-3">
+                  <div class="col-md-3 ps-5">
+                    <h6 class="mb-0">Email address</h6>
+                  </div>
+                  <div class="col-md-9 pe-5">
+                    <input type="email" class="form-control form-control-lg" placeholder="example@example.com" [(ngModel)]="editedCustomerEmail" />
+                  </div>
+                </div>
+                <hr class="mx-n3">
+                <div class="px-5 py-4">
+                  <button type="submit" (click)="editCustomer()" class="btn btn-primary btn-lg">Save</button>
+                  <button type="button" (click)="cancelEdit()" class="btn btn-secondary btn-lg ms-2">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <br><hr>
+
+  <!-- Existing customer table section -->
+  <div class="card">
+    <div class="card-body">
+      <table *ngIf="customers" class="table">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let customer of customers">
+          <td>{{customer.id}}</td>
+          <td>{{customer.name}}</td>
+          <td>{{customer.email}}</td>
+          <td>
+            <button (click)="handleDelete(customer)" class="btn btn-outline-danger">
+              <i class="bi bi-trash"></i>
+            </button>
+            <button (click)="toggleEditForm(customer)" class="btn btn-outline-primary ms-2">
+              <i class="bi bi-pencil"></i>
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

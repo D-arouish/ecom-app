@@ -1,4 +1,18 @@
 services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:23.0.4
+    command: [ "start-dev", "--import-realm"]
+    container_name: iao-ecom-keycloak
+    ports:
+      - '8080:8080'
+    expose:
+      - '8080'
+    environment:
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=admin
+
+    volumes:
+      - ./realms/:/opt/keycloak/data/import/
   iao-ecom-discovery-service:
     build: ./discovery-service
 #set conteneur name pour ne pas generer un nom par hazard
@@ -101,3 +115,99 @@ services:
     depends_on:
       iao-ecom-config-service:
         condition: service_healthy
+
+  front-end-angular:
+    build: ./ecom-app-angular
+    container_name: front-end-angular
+    ports:
+      - '80:80'
+    expose:
+      - '80'
+
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - 22181:2181
+
+#  kafka:
+#    image: confluentinc/cp-kafka:latest
+#    depends_on:
+#      - zookeeper
+#    ports:
+#      - 29092:29092
+#    expose:
+#      - 29092
+#    environment:
+#      KAFKA_BROKER_ID: 1
+#      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+#      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+#      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+#      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+#      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+#
+#
+#  iao-ecom-notification-service:
+#    build: ./notification-service
+#    container_name: iao-ecom-notification-service
+#    ports:
+#      - '8085:8085'
+#    expose:
+#      - '8085'
+#    environment:
+#      - DISCOVERY_SERVICE_URL=http://iao-ecom-discovery-service:8761/eureka
+#      - CONFIG_SERVICE_URL=http://iao-ecom-config-service:9999/
+##    healthcheck:
+##      test: [ "CMD","curl", "-f", "http://localhost:8085/actuator/health" ]
+##      interval: 10s
+##      retries: 4
+#    depends_on:
+#      - iao-ecom-vente-service
+#      - kafka
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

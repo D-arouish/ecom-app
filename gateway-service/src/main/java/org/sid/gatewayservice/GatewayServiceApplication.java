@@ -29,7 +29,7 @@ public class GatewayServiceApplication {
     //
     //}
 
-    //configuratiion de façon dynamique
+    //configuration de façon dynamique
     @Bean
     DiscoveryClientRouteDefinitionLocator dynamicRoutes(ReactiveDiscoveryClient rdc, DiscoveryLocatorProperties dlp){
         return new DiscoveryClientRouteDefinitionLocator(rdc,dlp);

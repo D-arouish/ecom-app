@@ -1,0 +1,131 @@
+<div class="p-3">
+  <button (click)="toggleAddProductForm()" class="btn btn-success ms-1">+Product</button><br><br>
+
+
+  <div *ngIf="showAddProductForm">
+    <section class="vh-25" style="background-color: rgba(39,121,226,0);">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-xl-9">
+            <div class="card" style="border-radius: 15px;">
+              <h1 class="text-black mb-4 text-center">Add Product</h1>
+              <div class="card-body">
+                <div class="row align-items-center pt-4 pb-3">
+                  <div class="col-md-3 ps-5">
+                    <h6 class="mb-0">Name</h6>
+                  </div>
+                  <div class="col-md-9 pe-5">
+                    <input type="text" class="form-control form-control-lg" [(ngModel)]="newProductName" />
+                  </div>
+                </div>
+                <hr class="mx-n3">
+                <div class="row align-items-center py-3">
+                  <div class="col-md-3 ps-5">
+                    <h6 class="mb-0">Price</h6>
+                  </div>
+                  <div class="col-md-9 pe-5">
+                    <input type="number" class="form-control form-control-lg"  [(ngModel)]="newProductPrice" />
+                  </div>
+                </div>
+                <hr class="mx-n3">
+                <div class="row align-items-center py-3">
+                  <div class="col-md-3 ps-5">
+                    <h6 class="mb-0">Quantity</h6>
+                  </div>
+                  <div class="col-md-9 pe-5">
+                    <input type="number" class="form-control form-control-lg"  [(ngModel)]="newProductQuantity" />
+                  </div>
+                </div>
+                <hr class="mx-n3">
+                <div class="px-5 py-4">
+                  <button type="submit" (click)="addProduct()" class="btn btn-primary btn-lg">Add Product</button>
+                  <button type="button" (click)="cancelAdd()" class="btn btn-secondary btn-lg ms-2">Cancel</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div *ngIf="showEditedProductForm">
+    <section class="vh-25" style="background-color: rgba(39,121,226,0);">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-xl-9">
+            <div class="card" style="border-radius: 15px;">
+              <h1 class="text-black mb-4 text-center">Edit Product</h1>
+              <div class="card-body">
+                <div class="row align-items-center pt-4 pb-3">
+                  <div class="col-md-3 ps-5">
+                    <h6 class="mb-0">Name</h6>
+                  </div>
+                  <div class="col-md-9 pe-5">
+                    <input type="text" class="form-control form-control-lg" [(ngModel)]="editedProductName" />
+                  </div>
+                </div>
+                <hr class="mx-n3">
+                <div class="row align-items-center py-3">
+                  <div class="col-md-3 ps-5">
+                    <h6 class="mb-0">Price</h6>
+                  </div>
+                  <div class="col-md-9 pe-5">
+                    <input type="number" class="form-control form-control-lg"  [(ngModel)]="editedProductPrice" />
+                  </div>
+                </div>
+                <hr class="mx-n3">
+                <div class="row align-items-center py-3">
+                  <div class="col-md-3 ps-5">
+                    <h6 class="mb-0">Quantity</h6>
+                  </div>
+                  <div class="col-md-9 pe-5">
+                    <input type="number" class="form-control form-control-lg"  [(ngModel)]="editedProductQuantity" />
+                  </div>
+                </div>
+                <hr class="mx-n3">
+                <div class="px-5 py-4">
+                  <button type="submit" (click)="editProduct()" class="btn btn-primary btn-lg">Save</button>
+                  <button type="button" (click)="cancelEdit()" class="btn btn-secondary btn-lg ms-2">Cancel</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <br><hr>
+  <div class="card">
+    <div class="card-body">
+      <table *ngIf="products" class="table">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let p of products">
+          <td>{{p.id}}</td><td>{{p.name}}</td><td>{{p.price}}$</td><td>{{p.quantity}}</td>
+          <td>
+            <button (click)="handleDelete(p)" class="btn btn-outline-danger">
+              <i class="bi bi-trash"></i>
+            </button>
+            <button (click)="toggleEditForm(p)" class="btn btn-outline-primary ms-2">
+              <i class="bi bi-pencil"></i>
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

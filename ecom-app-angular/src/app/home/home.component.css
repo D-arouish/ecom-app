@@ -1,0 +1,42 @@
+.custom-card {
+  border-radius: 30px; /* Increased border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  height: 600px; /* Adjust height for a more vertical look */
+  width: 400px;
+}
+body{
+  height: 90vh;
+}
+
+
+.custom-title {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.card-icon {
+  font-size: 4rem; /* Larger icon size */
+color: #555;
+margin: 1rem 0;
+}
+
+.custom-number {
+font-size: 2rem;
+font-weight: bold;
+margin-bottom: 1rem;
+}
+
+.custom-footer {
+font-size: 0.85rem;
+border-top: 1px solid #eee;
+padding-top: 0.75rem;
+}
+
+/* Specific background colors and icons can be customized here */
+.card.custom-card {
+background: #f8f9fa; /* Example light grey background */
+}
+
+

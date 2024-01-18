@@ -5,8 +5,374 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="699c8375-21a8-402f-b7a8-2fb819e34359" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/org/sid/customerservice/config/MapperConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/org/sid/customerservice/dto/CustomerDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/org/sid/customerservice/mappers/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/org/sid/customerservice/mappers/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/org/sid/customerservice/services/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/org/sid/customerservice/services/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/org/sid/customerservice/web/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/customers/customers.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/customers/customers.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/customers/customers.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/customers/customers.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/guards/auth.guard.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/guards/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/home/home.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/home/home.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/home/home.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/home/home.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/model/customer.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/model/product.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/model/productItem.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/model/vente.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/products/products.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/products/products.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/products/products.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/products/products.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/sales/sales.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/sales/sales.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/sales/sales.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/sales/sales.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/services/security.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/app/services/security.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/assets/silent-check-sso.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecom-app-angular/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/config-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/customer-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/discovery-depl.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/product-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/vente-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/org/sid/notificationservice/NotificationServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/org/sid/notificationservice/SalesEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/test/java/org/sid/notificationservice/NotificationServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/sid/productservice/config/MapperConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/sid/productservice/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/sid/productservice/dto/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/sid/productservice/mappers/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/sid/productservice/mappers/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/sid/productservice/services/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/sid/productservice/services/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/.kafka_cleanshutdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-0/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-0/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-0/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-0/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-0/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-1/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-1/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-1/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-1/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-1/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-10/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-10/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-10/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-10/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-10/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-11/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-11/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-11/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-11/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-11/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-12/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-12/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-12/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-12/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-12/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-13/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-13/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-13/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-13/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-13/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-14/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-14/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-14/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-14/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-14/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-15/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-15/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-15/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-15/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-15/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-16/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-16/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-16/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-16/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-16/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-17/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-17/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-17/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-17/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-17/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-18/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-18/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-18/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-18/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-18/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-19/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-19/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-19/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-19/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-19/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-2/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-2/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-2/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-2/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-2/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-20/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-20/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-20/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-20/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-20/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-21/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-21/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-21/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-21/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-21/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-22/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-22/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-22/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-22/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-22/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-23/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-23/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-23/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-23/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-23/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-24/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-24/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-24/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-24/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-24/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-25/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-25/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-25/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-25/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-25/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-26/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-26/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-26/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-26/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-26/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-27/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-27/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-27/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-27/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-27/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-28/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-28/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-28/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-28/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-28/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-29/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-29/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-29/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-29/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-29/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-3/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-3/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-3/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-3/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-3/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-30/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-30/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-30/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-30/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-30/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-31/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-31/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-31/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-31/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-31/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-32/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-32/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-32/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-32/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-32/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-33/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-33/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-33/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-33/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-33/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-34/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-34/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-34/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-34/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-34/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-35/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-35/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-35/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-35/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-35/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-36/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-36/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-36/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-36/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-36/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-37/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-37/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-37/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-37/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-37/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-38/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-38/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-38/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-38/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-38/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-39/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-39/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-39/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-39/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-39/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-4/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-4/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-4/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-4/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-4/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-40/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-40/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-40/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-40/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-40/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-41/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-41/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-41/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-41/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-41/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-42/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-42/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-42/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-42/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-42/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-43/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-43/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-43/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-43/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-43/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-44/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-44/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-44/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-44/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-44/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-45/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-45/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-45/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-45/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-45/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-46/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-46/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-46/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-46/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-46/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-47/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-47/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-47/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-47/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-47/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-48/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-48/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-48/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-48/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-48/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-49/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-49/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-49/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-49/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-49/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-5/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-5/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-5/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-5/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-5/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-6/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-6/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-6/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-6/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-6/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-7/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-7/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-7/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-7/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-7/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-8/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-8/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-8/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-8/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-8/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-9/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-9/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-9/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-9/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/__consumer_offsets-9/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/cleaner-offset-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/log-start-offset-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/meta.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/notificationTopic-0/00000000000000000000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/notificationTopic-0/00000000000000000000.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/notificationTopic-0/00000000000000000000.timeindex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/notificationTopic-0/leader-epoch-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/notificationTopic-0/partition.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/recovery-point-offset-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub-technology/kafka1/data/replication-offset-checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realms/realm-export.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vente-service/src/main/java/org/sid/venteservice/config/MapperConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vente-service/src/main/java/org/sid/venteservice/event/SalesEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/org/sid/gatewayservice/GatewayServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/org/sid/gatewayservice/GatewayServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vente-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vente-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vente-service/src/main/java/org/sid/venteservice/VenteServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/vente-service/src/main/java/org/sid/venteservice/VenteServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vente-service/src/main/java/org/sid/venteservice/entities/Vente.java" beforeDir="false" afterPath="$PROJECT_DIR$/vente-service/src/main/java/org/sid/venteservice/entities/Vente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vente-service/src/main/java/org/sid/venteservice/repositories/ProductItemsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/vente-service/src/main/java/org/sid/venteservice/repositories/ProductItemsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vente-service/src/main/java/org/sid/venteservice/repositories/VenteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/vente-service/src/main/java/org/sid/venteservice/repositories/VenteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vente-service/src/main/java/org/sid/venteservice/service/CustomerRestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/vente-service/src/main/java/org/sid/venteservice/service/CustomerRestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vente-service/src/main/java/org/sid/venteservice/service/ProductRestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/vente-service/src/main/java/org/sid/venteservice/service/ProductRestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vente-service/src/main/java/org/sid/venteservice/web/VenteRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vente-service/src/main/java/org/sid/venteservice/web/VenteRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vente-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/vente-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +383,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
         <option value="Dockerfile" />
       </list>
@@ -47,7 +414,7 @@
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/vente-service" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -65,6 +432,19 @@
   <component name="HttpClientSelectedEnvironments">
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
   </component>
+  <component name="KubernetesApiProvider">{
+  &quot;contexts&quot;: [
+    {
+      &quot;name&quot;: &quot;minikube&quot;,
+      &quot;originalNamespace&quot;: &quot;default&quot;,
+      &quot;currentNamespace&quot;: null
+    }
+  ],
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="KubernetesSettings">
+    <option name="contextName" value="minikube" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -79,47 +459,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Zakar/IdeaProjects/ecom-app/vente-service&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;spring&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "C:/Users/Zakar/IdeaProjects/ecom-app-angular",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false",
+    "ts.external.directory.path": "C:\\Users\\Zakar\\IdeaProjects\\ecom-app\\ecom-app-angular\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.sid.notificationservice" />
+      <recent name="org.sid.venteservice.config" />
       <recent name="org.sid.billingservice.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Zakar\IdeaProjects\ecom-app\angular-front-end\src\app" />
+      <recent name="C:\Users\Zakar\IdeaProjects\ecom-app\kubernetes" />
       <recent name="C:\Users\Zakar\IdeaProjects\ecom-app\vente-service" />
       <recent name="C:\Users\Zakar\IdeaProjects\ecom-app\product-service" />
       <recent name="C:\Users\Zakar\IdeaProjects\ecom-app\gateway-service" />
-      <recent name="C:\Users\Zakar\IdeaProjects\ecom-app\customer-service" />
-      <recent name="C:\Users\Zakar\IdeaProjects\ecom-app\config-service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Zakar\IdeaProjects\ecom-app\realms" />
+      <recent name="C:\Users\Zakar\IdeaProjects\ecom-app\notification-service\src\main\java\org\sid\notificationservice" />
       <recent name="C:\Users\Zakar\IdeaProjects\ecom-app" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.sid.venteservice.event" />
+      <recent name="org.sid.notificationservice" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -134,8 +527,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="npm.Angular CLI Server (angular-front-end)">
-    <configuration name="rest-api_2 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" requestIdentifier="#1" runType="Run single request">
+  <component name="RunManager" selected="Spring Boot.NotificationServiceApplication">
+    <configuration name="rest-api_4 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_4.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_4 | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_4.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_5 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_5.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Angular Application (angular-front-end)" type="JavascriptDebugType" uri="http://localhost:4200">
@@ -176,16 +575,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="NotificationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="notification-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.notificationservice.NotificationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="product-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.productservice.ProductServiceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.sid.productservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -216,22 +616,26 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.rest-api_2 | #1" />
+      <item itemvalue="HTTP Request.rest-api_4 | #1" />
+      <item itemvalue="HTTP Request.rest-api_4 | #2" />
+      <item itemvalue="HTTP Request.rest-api_5 | #1" />
       <item itemvalue="JavaScript Debug.Angular Application (angular-front-end)" />
       <item itemvalue="npm.Angular CLI Server (angular-front-end)" />
+      <item itemvalue="Spring Boot.NotificationServiceApplication" />
+      <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.ConfigServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
       <item itemvalue="Spring Boot.GatewayServiceApplication" />
-      <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.VenteServiceApplication" />
       <item itemvalue="Spring Boot.CustomerServiceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.VenteServiceApplication" />
-        <item itemvalue="Spring Boot.ProductServiceApplication" />
+        <item itemvalue="HTTP Request.rest-api_5 | #1" />
+        <item itemvalue="HTTP Request.rest-api_4 | #2" />
+        <item itemvalue="HTTP Request.rest-api_4 | #1" />
         <item itemvalue="Spring Boot.CustomerServiceApplication" />
-        <item itemvalue="HTTP Request.rest-api_2 | #1" />
+        <item itemvalue="Spring Boot.VenteServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -257,6 +661,27 @@
       <workItem from="1702996485301" duration="1541000" />
       <workItem from="1703075411739" duration="2487000" />
       <workItem from="1703099315717" duration="36000" />
+      <workItem from="1703154818508" duration="536000" />
+      <workItem from="1703541637858" duration="1093000" />
+      <workItem from="1703601654094" duration="701000" />
+      <workItem from="1703797635106" duration="6016000" />
+      <workItem from="1703840266169" duration="9706000" />
+      <workItem from="1704057184757" duration="345000" />
+      <workItem from="1704114791067" duration="942000" />
+      <workItem from="1704119499970" duration="1853000" />
+      <workItem from="1704122713748" duration="163000" />
+      <workItem from="1704286623127" duration="2251000" />
+      <workItem from="1704292809534" duration="8097000" />
+      <workItem from="1704397190275" duration="16349000" />
+      <workItem from="1704464109561" duration="25211000" />
+      <workItem from="1704546995424" duration="1477000" />
+      <workItem from="1704553074314" duration="24324000" />
+      <workItem from="1704661170038" duration="2782000" />
+      <workItem from="1704733308480" duration="24000" />
+      <workItem from="1704805840083" duration="1274000" />
+      <workItem from="1705320315074" duration="46709000" />
+      <workItem from="1705420201556" duration="15757000" />
+      <workItem from="1705501542628" duration="27303000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -312,6 +737,26 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="angular.json" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.kafka:kafka_2.13" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:karma" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-context" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:@angular/core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.ws.rs:jakarta.ws.rs-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -325,6 +770,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/config-service" />
+      <path value="$PROJECT_DIR$/customer-service" />
+      <path value="$PROJECT_DIR$/discovery-service" />
+      <path value="$PROJECT_DIR$/gateway-service" />
+      <path value="$PROJECT_DIR$/product-service" />
+      <path value="$PROJECT_DIR$/vente-service" />
+    </ignored-roots>
     <MESSAGE value="first commit" />
     <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
